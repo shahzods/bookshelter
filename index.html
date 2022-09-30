@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="container">
+        <div class="login__box">
+          <img class="login__logo" src="./img/logo.svg" alt="logo" />
+          <form class="form">
+            <div class="login__username">
+              <img class="user" src="./img/user.svg" alt="" />
+              <input
+                class="username-input text-white"
+                type="text"
+                placeholder="Username"
+                name="username"
+                required
+              />
+            </div>
+
+            <div class="login__password">
+              <img class="lock" src="./img/lock.svg" alt="" />
+              <input
+                class="password-input text-white"
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+            </div>
+
+            <button class="login__btn" type="submit">Login</button>
+
+            <p class="login__forgot">Forgot password?</p>
+          </form>
+        </div>
+        <!-- end of box -->
+      </div>
+      <!-- end of logo-container -->
+    </section>
+    <!-- end of logo -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="header__box">
+          <img src="./img/home-logo.svg" width="226" height="44" alt="" />
+
+          <form class="header__search">
+            <img
+              class="search__img"
+              src="./img/search.svg"
+              width="19"
+              height="19"
+              alt=""
+            />
+            <input
+              id="searchInput"
+              class="header__input text-black border-none"
+              type="text"
+              placeholder="Search books"
+            />
+          </form>
+
+          <div class="header__right">
+            <span>
+              <img class="sun" src="./img/sun.svg" alt="" />
+            </span>
+            <button id="logoutBtn">Logout</button>
+          </div>
+        </div>
+        <!-- end of header__box -->
+      </div>
+      <!-- end of container -->
+    </section>
+    <!-- end of header -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__box">
+          <p class="word">
+            Showing <span class="result"></span> Result(s<span
+              class="showing"
+            ></span
+            >)
+          </p>
+
+          <button class="hero__btn">
+            <img
+              class="calendar"
+              src="./img/calendar.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            Order by newest
+          </button>
+        </div>
+        <!-- end of hero__box -->
+      </div>
+      <!-- end of container -->
+    </section>
+    <!-- end of hero -->
+
+    <section class="main">
+      <div class="contain">
+        <div class="main__box">
+          <div class="main__left">
+            <h2 class="left__header">Bookmark</h2>
+            <p class="left__text">
+              If you don’t like to read, you haven’t found the right book
+            </p>
+
+            <ul class="bookmark__list"></ul>
+
+          </div>
+
+          <div class="main__right">
+            <ul class="book__list"></ul>
+
+            <br />
+
+            <div class="btns">
+              <button class="firstBtn rounded ">&#60</button>
+              <button class="1Btn rounded">1</button>
+              <button class="2Btn rounded">2</button>
+              <button class="3Btn rounded">3</button>
+              <button class="otherBtn rounded">...</button>
+              <button class="10Btn rounded">10</button>
+              <button class="nextBtn rounded">&#62</button>
+            </div>
+          </div>
+        </div>
+        <!-- end of main__box -->
+      </div>
+      <!-- end of contain -->
+    </section>
+    <!-- end of main -->
+
+    <section class="modal__section">
+      <div class="modals hidden">
+        <div class="modal__top">
+          <h3 class="modal__title">C</h3>
+          <button class="close-modal">
+            <img src="./img/x.svg" alt="">
+          </button>
+        </div>
+        
+        <div class="modal__main">
+          <img class="modal__img" src="" alt="">
+
+        <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus asperiores velit deserunt dignissimos similique accusantium. Quos suscipit animi id accusamus dolore voluptatibus provident doloremque minima! Ipsum quod, accusamus aperiam atque distinctio, dicta mollitia neque nisi aliquid tempora reiciendis temporibus? Sapiente debitis ullam alias quos expedita eaque corporis nulla architecto.</p>
+
+        <div class="modal__d">Author: <span class="modal__a">Robert</span></div>
+        <div class="modal__d">Published: <span class="modal__a">2022</span></div>
+        <div class="modal__d">Publishes: <span class="modal__a">Holllman</span></div>
+        <div class="modal__d">Catigories <span class="modal__a">Computer</span></div>
+        <div class="modal__d">Pages Count: <span class="modal__a">346</span></div>
+        </div>
+
+        <div class="modal__footer">
+          <a href="" class="modal__read">Read</a>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </section>
+    <!-- end of modal-section -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
